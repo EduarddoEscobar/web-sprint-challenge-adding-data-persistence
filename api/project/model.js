@@ -15,7 +15,7 @@ async function getAll(){
 async function create(project){
     let [id] = await db('projects').insert(project);
     return{
-        id,
+        project_id: id,
         ...project,
         project_completed: project.project_completed ? true : false
     }

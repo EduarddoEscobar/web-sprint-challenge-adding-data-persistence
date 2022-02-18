@@ -12,7 +12,7 @@ app.use(cors());
 app.use(helmet());
 app.use('/api/resources', resourceRouter);
 app.use('/api/projects', projectRouter);
-app.use('/api/task', taskRouter);
+app.use('/api/tasks', taskRouter);
 
 app.use((err, req, res, next) => {
     res.status(err.status || 500).json({
