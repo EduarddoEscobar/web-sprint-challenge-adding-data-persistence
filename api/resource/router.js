@@ -12,15 +12,6 @@ router.get('/', async (req, res, next) => {
     }   
 })
 
-router.get('/:id', async (req, res, next) => {
-    try{
-        let resource = await Resources.getById(req.params.id);
-        res.status(200).json(resource);
-    }catch(e){
-        next(e);
-    }
-})
-
 router.post('/', async (req, res, next) => {
     try{
         let newResource = await Resources.create(req.body);
