@@ -110,7 +110,7 @@ Build an API inside the `api` folder with endpoints for:
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
-1. Explain the difference between Relational Databases and SQL
+1. Explain the difference between Relational Databases and SQL?
     Relational Databases store data in a tabular format grouped into rows and columns. SQL is a language that allows you to query a database that is efficient at retrieving data
 2. Why do tables need a Primary Key?
     Tables need a primary key so that every entry can be queried.
